@@ -37,5 +37,5 @@ npm run dev
 ```
 
 # Website Preview:
-## Organize and Edit You Tasks: ![alt text](https://github.com/Tarundeep-saini/Form.io/blob/main/Resources/tasks.png?raw=true)
-## Filter Your Tasks: ![alt text](https://github.com/Tarundeep-saini/Form.io/blob/main/Resources/Filter.png?raw=true)
+## Organize and Edit You Tasks: ![alt text](https://github.com/Tarundeep-saini/Task-Management-Application/blob/main/Resources/tasks.png?raw=true)
+## Filter Your Tasks: ![alt text](https://github.com/Tarundeep-saini/Task-Management-Application/blob/main/Resources/Filter.png?raw=true)
