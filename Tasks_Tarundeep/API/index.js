@@ -254,7 +254,12 @@ app.patch("/toggleComplete", async (req, res) => {
   }
 });
 
-mongoose.connect("mongodb://localhost:27017/Tasks").then(() => {
+app.use("/", (req, res, next) => {
+  res.json({ message: "Welcome" });
+  next();
+});
+
+mongoose.connect("mongodb+srv://tarundeepsaini037:Testing1234@location.in8fipa.mongodb.net/Tasks?retryWrites=true&w=majority").then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
