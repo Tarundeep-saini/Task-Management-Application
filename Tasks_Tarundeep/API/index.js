@@ -17,8 +17,9 @@ var corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
-app.use(cors(corsOptions));
+
 app.options("https://task-management-application-gold.vercel.app/home", cors()); 
+app.options("https://task-management-application-gold.vercel.app/profile", cors()); 
 
 app.use(bodyParser.json());
 
