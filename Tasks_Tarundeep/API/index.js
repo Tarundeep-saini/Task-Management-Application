@@ -18,8 +18,6 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.options("https://task-management-application-gold.vercel.app/home", cors()); 
-
 app.use(bodyParser.json());
 
 app.post("/auth", async (req, res) => {
@@ -103,8 +101,8 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ message: "Internal Server Error", isError: true });
   }
 });
-app.options("/profile", cors()); 
-app.use("/profile", cors(), (req, res) => {
+
+app.use("/profile",  (req, res) => {
   const token = req.cookies?.token;
   if (!token) {
     return;
