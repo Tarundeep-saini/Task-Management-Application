@@ -12,7 +12,7 @@ var jwtKey = "shhhhh";
 const PORT = process.env.PORT || 3000;
 
 var corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://task-management-application-gold.vercel.app",
   optionsSuccessStatus: 200,
   credentials: true,
 };
