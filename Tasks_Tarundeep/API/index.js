@@ -11,12 +11,7 @@ app.use(cookieParser());
 var jwtKey = "shhhhh";
 const PORT = process.env.PORT || 3000;
 
-var corsOptions = {
-  origin: "https://task-management-application-gold.vercel.app",
-  optionsSuccessStatus: 200,
-  credentials: true,
-};
-app.use(cors(corsOptions));
+
 
 app.use(bodyParser.json());
 
