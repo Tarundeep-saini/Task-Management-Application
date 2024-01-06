@@ -8,7 +8,7 @@ import { UserContextProvider, userContext } from "./Context/User-Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  axios.defaults.baseURL = "https://task-management-application-api.vercel.app";
+  axios.defaults.baseURL = "http://localhost:3000";
   axios.defaults.withCredentials = true;
   const { username } = useContext(userContext);
 
