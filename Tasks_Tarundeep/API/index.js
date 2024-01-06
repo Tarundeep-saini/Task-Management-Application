@@ -12,11 +12,13 @@ var jwtKey = "shhhhh";
 const PORT = process.env.PORT || 3000;
 
 var corsOptions = {
-  origin: "*",
+  origin: "https://task-management-application-gold.vercel.app",
   optionsSuccessStatus: 200,
   credentials: true,
 };
 app.use(cors(corsOptions));
+app.use(cors(corsOptions));
+app.options("https://task-management-application-gold.vercel.app/home", cors()); 
 
 app.use(bodyParser.json());
 
