@@ -19,9 +19,11 @@ npm install
 ```sh
 npm run dev
 ```
-Create an.Env File with :
-ORIGIN= "http://localhost:5173"
-DB_URL= "YOUR_DATABASE_LINK/Forms"
+# Create an.Env File with :
+```sh
+DB_URL= "YOUR_DATABASE_LINK/Tasks"
+```
+
 
 # Front End
 Install the dependencies and devDependencies and start the server.
