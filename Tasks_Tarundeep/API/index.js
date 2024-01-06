@@ -12,7 +12,7 @@ var jwtKey = "shhhhh";
 const PORT = process.env.PORT || 3000;
 
 var corsOptions = {
-  origin: "https://task-management-application-gold.vercel.app","*",
+  origin: "http://localhost:5173",
   optionsSuccessStatus: 200,
   credentials: true,
 };
@@ -259,7 +259,7 @@ app.use("/", (req, res, next) => {
   next();
 });
 
-mongoose.connect("mongodb+srv://tarundeepsaini037:Testing1234@location.in8fipa.mongodb.net/Tasks?retryWrites=true&w=majority").then(() => {
+mongoose.connect(process.env.DB_URL).then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
