@@ -29,7 +29,7 @@ DB_URL= "YOUR_DATABASE_LINK/Tasks"
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd API
+cd Client
 ```
 ```sh
 npm install
